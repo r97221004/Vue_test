@@ -5,7 +5,7 @@ import App from './App.vue'
 //關閉 Vue 的生產提示
 Vue.config.productionTip = false
 
-	/ 建vm
+//創建 vm
 new Vue({
 	el: '#app',
 	render: h => h(App),

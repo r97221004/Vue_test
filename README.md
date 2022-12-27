@@ -226,7 +226,7 @@ See [Configuration Reference](https://cli.vuejs.org/config/).
 
 6. 組件上也可以綁定原生DOM事件，需要使用```native```修飾符。
 
-7. 註意：通過```this.$refs.xxx.$on('atguigu',回調)```綁定自定義事件時，回調<span style="color:red">要麽配置在methods中</span>，<span style="color:red">要麽用箭頭函數</span>，否則this指向會出問題！
+7. 注意：通過```this.$refs.xxx.$on('atguigu',回調)```綁定自定義事件時，回調<span style="color:red">要麽配置在methods中</span>，<span style="color:red">要麽用箭頭函數</span>，否則this指向會出問題！
 
 ## 全局事件總線（GlobalEventBus）
 
