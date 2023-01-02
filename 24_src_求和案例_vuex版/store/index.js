@@ -39,12 +39,12 @@ const mutations = {
 		state.sum -= value
 	}
 }
-//準備 stat e——用於存儲數據
+//準備 state——用於存儲數據
 const state = {
 	sum: 0 //當前的和
 }
 
-//創建並暴露store
+//創建並暴露 store
 export default new Vuex.Store({
 	actions,
 	mutations,
