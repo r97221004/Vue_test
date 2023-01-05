@@ -28,7 +28,7 @@ const actions = {
 		}, 500)
 	}
 }
-//準備mutations——用於操作數據（state）
+//準備 mutations——用於操作數據（state）
 const mutations = {
 	JIA(state, value) {
 		console.log('mutations中的JIA被調用了')
@@ -39,11 +39,11 @@ const mutations = {
 		state.sum -= value
 	}
 }
-//準備state——用於存儲數據
+//準備 state ——用於存儲數據
 const state = {
 	sum: 0 //當前的和
 }
-//準備getters——用於將state中的數據進行加工
+//準備 getters ——用於將 state 中的數據進行加工
 const getters = {
 	bigSum(state) {
 		return state.sum * 10
