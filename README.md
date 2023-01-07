@@ -1,29 +1,3 @@
-# vue_test
-
-## Project setup
-```
-npm install
-```
-
-### Compiles and hot-reloads for development
-```
-npm run serve
-```
-
-### Compiles and minifies for production
-```
-npm run build
-```
-
-### Lints and fixes files
-```
-npm run lint
-```
-
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
-
-
 # 筆記
 
 ## 腳手架文件結構
@@ -59,7 +33,7 @@ See [Configuration Reference](https://cli.vuejs.org/config/).
 
 ## ref屬性
 
-1. 被用來給元素或子組件註冊引用信息（id的替代者）
+1. 被用來給元素或子組件注冊引用信息（id的替代者）
 2. 應用在html標簽上獲取的是真實DOM元素，應用在組件標簽上是組件實例對象（vc）
 3. 使用方式：
     1. 打標識：```<h1 ref="xxx">.....</h1>``` 或 ```<School ref="xxx"></School>```
@@ -89,7 +63,7 @@ See [Configuration Reference](https://cli.vuejs.org/config/).
         }
         ```
 
-    > 備註：props是只讀的，Vue底層會監測你對props的修改，如果進行了修改，就會發出警告，若業務需求確實需要修改，那麽請覆制props的內容到data中一份，然後去修改data中的數據。
+    > 備注：props是只讀的，Vue底層會監測你對props的修改，如果進行了修改，就會發出警告，若業務需求確實需要修改，那麽請覆制props的內容到data中一份，然後去修改data中的數據。
 
 ## mixin(混入)
 
@@ -191,7 +165,7 @@ See [Configuration Reference](https://cli.vuejs.org/config/).
 
         ​		該方法會清空存儲中的所有數據。
 
-4. 備註：
+4. 備注：
 
     1. SessionStorage存儲的內容會隨著瀏覽器窗口關閉而消失。
     2. LocalStorage存儲的內容，需要手動清除才會消失。
@@ -321,7 +295,7 @@ See [Configuration Reference](https://cli.vuejs.org/config/).
       </transition>
       ```
 
-   3. 備註：若有多個元素需要過度，則需要使用：```<transition-group>```，且每個元素都要指定```key```值。
+   3. 備注：若有多個元素需要過度，則需要使用：```<transition-group>```，且每個元素都要指定```key```值。
 
 ## vue腳手架配置代理
 
@@ -566,7 +540,7 @@ module.exports = {
 
 3. 組件中修改vuex中的數據：```$store.dispatch('action中的方法名',數據)``` 或 ```$store.commit('mutations中的方法名',數據)```
 
-   >  備註：若沒有網絡請求或其他業務邏輯，組件中也可以越過actions，即不寫```dispatch```，直接編寫```commit```
+   >  備注：若沒有網絡請求或其他業務邏輯，組件中也可以越過actions，即不寫```dispatch```，直接編寫```commit```
 
 ### 5.getters的使用
 
@@ -642,7 +616,7 @@ module.exports = {
    }
    ```
 
-> 備註：mapActions與mapMutations使用時，若需要傳遞參數需要：在模板中綁定事件時傳遞好參數，否則參數是事件對象。
+> 備注：mapActions與mapMutations使用時，若需要傳遞參數需要：在模板中綁定事件時傳遞好參數，否則參數是事件對象。
 
 ### 7.模塊化+命名空間
 
@@ -925,7 +899,7 @@ module.exports = {
    >跳轉</router-link>
    ```
 
-   > 特別註意：路由攜帶params參數時，若使用to的對象寫法，則不能使用path配置項，必須使用name配置！
+   > 特別注意：路由攜帶params參數時，若使用to的對象寫法，則不能使用path配置項，必須使用name配置！
 
 3. 接收參數：
 
